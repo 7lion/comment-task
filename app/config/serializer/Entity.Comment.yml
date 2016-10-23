@@ -1,0 +1,17 @@
+AppBundle\Entity\Comment:
+  exclusion_policy: ALL
+  properties:
+    id:
+      expose: true
+      type: integer
+    text:
+      expose: true
+      type: string
+      accessor:
+          getter: getStripText
+    user:
+      expose: true
+      type: AppBundle\Entity\User
+    createdAt:
+      expose: true
+      type: DateTime<'Y-m-d\TH:i:sO'>
