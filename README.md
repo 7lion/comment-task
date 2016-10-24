@@ -1,4 +1,4 @@
-## Тестовое задание
+## Тестовое заданиеdsdsds
 
 >Реализовать систему комментариев с PHP и MySQL. Рядом со статьей пользователь может писать комментарии, которые в дальнейшем также могут быть откомментированы им самим и другими пользователями. Регистрацию и Правила пользования можно не учитывать. Следующие пункты обязательны:
 
@@ -16,14 +16,18 @@
 
 ## Установка
 
-### Установка GD бібліотеки для каптчі
-    sudo apt-get install php5-gd && sudo service apache2 restart
+### Створення DB з вказанням даної назви в наступньому кроці
+
+asasassasa    sudo apt-get install php5-gd && sudo service apache2 restart
     
 ### Установка зв’язків
-    composer install -o
+    composer install -odsd
    
 ### Виконання міграцій
-    bin/console doctrine:m:m   
+    php bin/console doctrine:m:m  
+    
+### Генерація assets
+    php bin/console assetic:dump      
     
 ### Запуск сервера
-    bin/console server:start
+    php bin/console server:start
